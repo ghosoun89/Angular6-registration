@@ -1,0 +1,53 @@
+<div class="container-fluid stylish-form">
+  <h2 class="text-center">We hope you will Enjoy</h2>
+  <div class="row mar20" >
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="inner-section">
+        <form >
+          <div class="mar20 inside-form">
+            <h2 class="font_white text-center">SIGN UP</h2>
+            <ul>
+              <li class="icon-holder dsp-flex">
+                <i class="fa fa-facebook "></i>
+              </li>
+              <li class="icon-holder dsp-flex">
+                <i class="fa fa-twitter "></i>
+              </li>
+              <li class="icon-holder dsp-flex">
+                <i class="fa fa-instagram "></i>
+              </li>
+            </ul>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-pencil "></i></span>
+              <input [(ngModel)]='registerUserData.firstName' name= 'firstName'type="text" class="form-control" name="text" placeholder="First Name...">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-pencil "></i></span>
+                <input  [(ngModel)]='registerUserData.lastName' name= 'lastName'type="text" class="form-control" name="text" placeholder="Last Name...">
+              </div>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-envelope "></i></span>
+              <input [(ngModel)]='registerUserData.email' name= 'email' type="email" class="form-control" name="text" placeholder="Email...">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon"><i class="fa fa-lock "></i></span>
+              <input [(ngModel)]='registerUserData.password' name= 'password'type="password" class="form-control" name="text" placeholder="Password...">
+            </div>
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-lock "></i></span>
+                <input [(ngModel)]='registerUserData.confPass' name= 'confPass'type="password" class="form-control" name="text" placeholder="Confirm Password...">
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-cloud-upload "></i></span>
+                  <input [(ngModel)]='registerUserData.URL' name= 'URL' type="text" class="form-control" placeholder="URL...">
+                </div>
+            <div class="footer text-center">
+              <button  class="btn btn-neutral btn-round btn-lg" (click) = "register()">Submit</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+ 
+</div>

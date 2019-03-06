@@ -1,0 +1,33 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+  <a class="navbar-brand" href="#">NG6</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSuportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link "routerLink="/home" routerLinkActive="active">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " routerLink="/news" routerLinkActive="active">News</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " routerLink="/profile" routerLinkActive="active">Profile</a>
+      </li>
+    </ul>
+  </div>
+    <div>
+      <ul class="navbar-nav">
+          <a class="nav-link "*ngIf='!_authService.loggedIn()' routerLink="/register" routerLinkActive="active">SignUp</a>
+          <a class="nav-link " *ngIf='!_authService.loggedIn()' routerLink="/login" routerLinkActive="active">SignIn</a>
+        <a class="nav-link " style="cursor: pointer" *ngIf='_authService.loggedIn()'(click)="_authService.LogoutUser()">Logout</a>
+      </ul>
+    </div>
+     
+   
+  
+</nav>
+<div class="container">
+<router-outlet></router-outlet>
+</div>
