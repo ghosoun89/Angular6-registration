@@ -2,12 +2,56 @@
 <h3>{{new.status}}</h3>
 <p>{{new.articles}}</p>
 </div> -->
-<ul class="list-group">
-  <li class="list-item"
-  *ngFor="let post of news">
-  {{post}}
+<ul class="list-group" >
+  <li class="list-group-item" 
+  *ngFor="let post of posts">
  
-<!-- {{post.articles[0].source.title}} -->
+ 
+{{post.articles[0].author}}
   </li>
 
+  <li class="list-group-item"
+  *ngFor="let post of posts">
+ 
+ 
+{{post.articles[0].content}}
+  </li>
+  <li class="list-group-item"
+  *ngFor="let post of posts">
+ 
+ 
+{{post.articles[0].description}}
+  </li>
+  <li class="list-group-item"
+  *ngFor="let post of posts">
+ 
+ 
+{{post.articles[0].publishedAt}}
+  </li>
+  <li class="list-group-item"
+  *ngFor="let post of posts">
+ 
+ 
+{{post.articles[0].source.id}}
+  </li>
+  <li class="list-group-item"
+  *ngFor="let post of posts">
+ 
+ 
+{{post.articles[1].content}}
+  </li>
+  <li class="list-group-item"
+  *ngFor="let post of posts">
+ 
+ 
+{{post.articles[1].description}}
+  </li>
+  <li class="list-group-item"
+  *ngFor="let post of posts">
+ 
+ 
+{{post.articles[1].publishedAt}}
+  </li>
+ 
+ 
 </ul>

@@ -18,14 +18,18 @@ private url ='https://newsapi.org/v2/top-headlines?sources=al-jazeera-english&ap
     .subscribe(Response => {
       console.log('bbbbb', Response);
       this.posts= Response;
-      let all = Object.keys(this.posts)
-      let newarr = [];
-      for( let post of all){
-        newarr.push(all[post])
-      }
- this.news= newarr
- console.log(this.news)
-    });
+      // let all = Object.keys(this.posts)
+      // let newarr = [];
+      // for( let post of all){
+      //   newarr.push(all[post])
+      // }
+//  this.news= newarr
+//  console.log(this.news)
+this.posts = Array.of(this.posts)
+    },
+    err => console.error(err),
+    ()=> console.log("get news", this.posts)
+    );
   }
  
 
