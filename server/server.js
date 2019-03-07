@@ -14,7 +14,8 @@ const api = require('./routes/api')
 const app = express()
 app.use(express.static('../dist'))
 app.get('/*', (req,res) => {
-    res.sendFile(path.join(__dirname, '/dist/index.html'));
+    // res.sendFile(path.join(__dirname, '/dist/index.html'));
+    res.send("heloo")
 });
 app.use(cors())
 
