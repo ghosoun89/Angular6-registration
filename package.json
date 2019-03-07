@@ -2,10 +2,9 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "postinstall": "npm run build",
   "scripts": {
-    "build": "cd .. && cd ngApp && ng build --prod"
+    "build": "cd ngApp && ng build --prod"
   },
   "keywords": [],
   "author": "",
