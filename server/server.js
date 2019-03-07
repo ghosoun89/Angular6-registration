@@ -12,9 +12,9 @@ const PORT = 3000
 const api = require('./routes/api')
 
 const app = express()
-app.use(express.static('../ngApp/dist/ngApp'))
+app.use(express.static('./ngApp/dist/ngApp'))
 app.get('/*', (req,res) => {
-    res.sendFile(path.join(__dirname, '../ngApp/dist/ngApp/index.html'));
+    res.sendFile(path.join(__dirname, './ngApp/dist/ngApp/index.html'));
 });
 app.use(cors())
 
